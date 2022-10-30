@@ -55,11 +55,6 @@ button {
     padding-bottom: 94px;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 .list {
     list-style: none;
@@ -393,6 +388,7 @@ color: var(--secondary-text-color)
     letter-spacing: 0.02em;
     color: var(--ouwer-text-color);
     line-height: 1.71;
+    
 
 }
 
@@ -405,15 +401,22 @@ color: var(--secondary-text-color)
 .footer-mail:focus{
     color: var(--acent-color);
 }
+
+
+
 /*---------портфоліо------*/
 .btn-container {
     display: flex;
     gap: 8px;
+    justify-content: center;
+    
+    
     }
 
 .list-btn{
     background-color: var(--backround-section-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
 }
 
 
@@ -430,6 +433,7 @@ color: var(--main-text-color);
 background-color: var(--butons-port-color);
 cursor: pointer;
 padding: 12px 23px;
+margin-bottom: 34px;
 }
 
 .list-btn:hover, .list-btn:focus{
@@ -440,17 +444,34 @@ padding: 12px 23px;
 /*--------проєкти--------*/
 
 .portfolio-section{
-    background-color: var(--butons-port-color);
+    background-color: var(--background-color);
 }
 
 .list-project{
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    display: flex;
+
 }
+
 
 .project-container{
     width: 370px;
     height: 404px;  
+    flex-wrap: wrap;
+    
+    background-color: var(--background-color); 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.project-container:nth-child(3n) {
+    padding-right: 0;
+}
+
+.img-project {
+    padding-bottom: 20px;
 }
 
 .project-name{
@@ -461,6 +482,8 @@ line-height: calc(36/18);
 letter-spacing: 0.06em;
 
 color: var(--main-text-color);
+padding-bottom: 9px;
+padding-left: 24px;
 }
 
 .about{
@@ -470,5 +493,7 @@ line-height: calc(30/16);
 letter-spacing: 0.03em;
 
 color: var(--ouwer-text-color);
+padding-bottom: 20px;
+padding-left: 24px;
 }
 
