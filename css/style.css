@@ -345,15 +345,16 @@ color: var(--ouwer-text-color);
         line-height: calc(31/26);    
         letter-spacing: 0.03em;    
         color: var(--acent-color);
-       
-        
         
 }
+             
 
 .logo-footer-part {
     color: var(--secondary-text-color);
 }
-
+.contacts{
+    margin-top: 20px;
+}
 .adress {
     font-family: 'Roboto';
 font-style: normal;
@@ -361,9 +362,13 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-margin-top: 20px;
 
-color: var(--secondary-text-color)
+color: var(--secondary-text-color);
+
+}
+
+.contact-list { 
+    margin-bottom: 9px;
 }
 
 .footer-mail{
@@ -374,7 +379,7 @@ color: var(--secondary-text-color)
     letter-spacing: 0.02em;
     color: var(--ouwer-text-color);
     line-height: 1.71;
-    margin-bottom: 9px;
+    
 
 }
 
@@ -443,6 +448,7 @@ padding: 6px 22px;
 
 
 .list-project{
+    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -463,6 +469,12 @@ letter-spacing: 0.06em;
 
 color: var(--main-text-color);
 margin-bottom: 4px;
+}
+
+.about-project{
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: 0px;
 }
 
 .about{
