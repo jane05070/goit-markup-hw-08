@@ -232,6 +232,11 @@ margin-bottom: 10px;
 color: var(--main-text-color);
 }
 
+.features-icon{
+    justify-content: center;
+    align-items: center;
+
+}
 .features-list{
     display: flex;
     gap: 30px;
