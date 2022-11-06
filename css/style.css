@@ -186,6 +186,15 @@ color: var(--ouwer-text-color);}
 .hero{
     background-color: var(--background-footer-color);
     padding: 200px 0;
+    background-color: C4C4C4;
+    background-image: linear-gradient(rgba(47,48,58,0.4),rgba(47,
+        48,58,0.4)), url(../image/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    
+
 }
 
 .title{
@@ -232,9 +241,22 @@ margin-bottom: 10px;
 color: var(--main-text-color);
 }
 
+.features-bg{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        background-color: #F5F4FA;
+        color: #AFB1B8;
+        margin-bottom: 30px;
+        
+}
 .features-icon{
     justify-content: center;
     align-items: center;
+    color: var(--main-text-color);
+    
 
 }
 .features-list{
@@ -369,14 +391,62 @@ background-color: var(--acent-color);
 color: var(--secondary-text-color);
 }
 
+.clients{
+    font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42/36);
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: var(--main-text-color);
+        margin-bottom: 50px;
+    }
+
+.clients-list{
+    display: flex;
+    gap: 30px;
+      
+}
+
+.clients-bg{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        background-color: #F5F4FA;
+        color: #AFB1B8;
+        margin-bottom: 30px;
+        border: 1px solid #AFB1B8;
+}
+
+.clients-icon{
+    justify-content: center;
+        align-items: center;
+        fill: #AFB1B8;
+
+}
+
+
+.clients-icon:hover,
+.clients-icon:focus {
+    fill: var(--acent-color);
+}
+
+
+
 /*--------Footer-------*/
 
 .footer {
     background-color: var(--background-footer-color);
     padding: 60px 0;
     
+    
 }
-
+.footer-section{
+    display: flex;
+    
+}
 
 .logo-footer {
     font-family: 'Raleway';
@@ -444,6 +514,50 @@ color: var(--secondary-text-color);
     color: var(--acent-color);
 }
 
+.footer-list{
+    margin-left: 50px;
+}
+    
+
+
+.join{
+    font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+        margin-bottom: 20px;
+}
+.footer-social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+}
+.footer-social-item{
+    
+    }
+
+.footer-socials-link{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        fill: var(--secondary-text-color);
+        background-color: #ffffff10;
+}
+
+.footer-socials-link:focus,
+.footer-socials-link:hover {
+    background-color: var(--acent-color);
+    color: var(--secondary-text-color);
+}
+.footer-socials-icon{}
 
 
 /*---------портфоліо------*/
