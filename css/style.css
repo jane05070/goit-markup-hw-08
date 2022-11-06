@@ -80,6 +80,8 @@ button {
 .header-container{ 
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
+   
     
 }
 
@@ -176,6 +178,10 @@ color: var(--ouwer-text-color);}
     color: var(--acent-color);
 }
 
+.header-icon{
+    fill: currentColor;
+    gap: 10px;
+}
 /* main */
 .hero{
     background-color: var(--background-footer-color);
@@ -309,7 +315,7 @@ color: var(--main-text-color);
     padding: 30px 0;
 
 }
-.name {
+.name{
     font-weight: 500;
 font-size: 16px;
 line-height: calc(19/16);
@@ -327,6 +333,35 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: var(--ouwer-text-color);
+margin-bottom: 16px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.socials-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: var(--background-color);
+    color:#AFB1B8;
+}
+
+.socials-icon {
+    fill: currentColor;
+}
+.socials-link:focus,
+.socials-link:hover {
+background-color: var(--acent-color);
+color: var(--secondary-text-color);
 }
 
 /*--------Footer-------*/
@@ -366,8 +401,7 @@ letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 
 }
-
-.contact-list { 
+.contact-list-footer{
     margin-bottom: 9px;
 }
 
@@ -408,6 +442,10 @@ color: var(--secondary-text-color);
 
 
 /*---------портфоліо------*/
+
+.portfolio-section{
+    padding: 94px 0;
+}
 .btn-container {
     display: flex;
     gap: 8px;
