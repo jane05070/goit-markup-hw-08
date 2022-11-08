@@ -158,10 +158,14 @@ font-size: 14px;
 line-height: calc(16/14);
 letter-spacing: 0.02em;
 
-color: var(--ouwer-text-color);}
+color: var(--ouwer-text-color);
+display: flex;
+    gap: 10px;
+}
 
 .header-mail:hover, .header-mail:focus{
     color: var(--acent-color);
+    
 }
 
 .header-phone{
@@ -173,20 +177,22 @@ color: var(--ouwer-text-color);}
     letter-spacing: 0.02em;
     
     color: var(--ouwer-text-color);
-}
+    display: flex;
+        gap: 10px;
+    }
+
 .header-phone:hover, .header-phone:focus{
-    color: var(--acent-color);
-}
+    color: var(--acent-color);}
+    
 
 .header-icon{
     fill: currentColor;
-    gap: 10px;
+    
 }
 /* main */
 .hero{
     background-color: var(--background-footer-color);
     padding: 200px 0;
-    background-color: C4C4C4;
     background-image: linear-gradient(rgba(47,48,58,0.4),rgba(47,
         48,58,0.4)), url(../image/bg.jpg);
     background-repeat: no-repeat;
@@ -416,7 +422,6 @@ color: var(--secondary-text-color);
         height: 92px;
         background-color: #F5F4FA;
         color: #AFB1B8;
-        margin-bottom: 30px;
         border: 1px solid #AFB1B8;
 }
 
