@@ -423,7 +423,7 @@ color: var(--secondary-text-color);
         align-items: center;
         width: 170px;
         height: 92px;
-        background-color: #F5F4FA;
+        background-color: var(--background-color);
         color: #AFB1B8;
         border: 1px solid currentColor;
         border-radius: 4px;
