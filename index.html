@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web-studio</title>
@@ -60,7 +60,7 @@
     <main>
       <section class="hero">
         <div class="container"><h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="first-btn">Замовити послугу</button>
+        <button type="button" class="first-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -122,8 +122,7 @@
             <img class="image-doing"
               src="./image/box-img-1.jpg"
               alt="друк на клавіатурі"
-              width="370"
-            />
+              width="370">
             <div class="overlay">
               <p class="overlay-text">Десктопні додатки</p>
             </div>
@@ -132,15 +131,14 @@
             <img class="image-doing"
               src="./image/box-img-2.jpg"
               alt="телефон та екран монітору"
-              width="370"
-            />
+              width="370">
             <div class="overlay">
               <p class="overlay-text">Мобідьні додатки</p>
             </div>
           </li>
           <li class="doing-item">
             <img class="image-doing"
-            src="./image/box-img-3.jpg" alt="планшет" width="370" />
+            src="./image/box-img-3.jpg" alt="планшет" width="370">
             <div class="overlay">
               <p class="overlay-text">Дизайнерські рішення</p>
             </div>
@@ -195,7 +193,7 @@
             </div>
           </li>
           <li class="card">
-            <img src="./image/persona-img-2.jpg" alt="жінка" width="270" />
+            <img src="./image/persona-img-2.jpg" alt="жінка" width="270">
             <div class="person">
             <h3 class="name">Ольга Рєпіна</h3>
             <p lang="en" class="proffesion">Frontend Developer</p>
@@ -234,7 +232,7 @@
             </div>
           </li>
           <li class="card">
-            <img src="./image/persona-img-3.jpg" alt="чоловік" width="270" />
+            <img src="./image/persona-img-3.jpg" alt="чоловік" width="270">
             <div class="person">
             <h3 class="name">Микола Тарасов</h3>
             <p lang="en" class="proffesion">Marketing</p>
@@ -275,7 +273,7 @@
             </div>
           </li>
           <li class="card">
-            <img src="./image/persona-img-4.jpg" alt="чоловік" width="270" />
+            <img src="./image/persona-img-4.jpg" alt="чоловік" width="270">
             <div class="person">
             <h3 class="name">Михайло Єрмаков</h3>
             <p lang="en" class="proffesion">UI Designer</p>
@@ -375,7 +373,6 @@
                       </use>
                     </svg></a>
                 </li>
-            </li>
           </ul>
         </div>
       </section>
@@ -443,5 +440,17 @@
       </div>
 
     </footer>
+
+    <!---Модальне вікно--->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="30" height="30">
+            <use href="./image/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
