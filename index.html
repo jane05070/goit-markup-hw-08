@@ -444,19 +444,43 @@
       </button>
     </div>
 
-    <div>
-      <p class=""> Залиште свої дані, ми вам передзвонимо </p>
-      <form name="modal_form" autocomplete="on" novalidate></form>
-      <label Ім'я>
-        <input type="text" name="user_name" id="Ім'я">
-      </label>
-      <label Телефон>
-        <input type="phone" name="user_namber" id="Телефон">
-      </label>
     
+      <p class=""> Залиште свої дані, ми вам передзвонимо </p>
+      <form name="modal_form">
+  <div role="group">  
+    <div>
+      <label for="user_name">Ім'я</label>
+        <input type="text" name="user_name" id="user_name" required>
+        <svg class="" width="18" height="18">
+          <use href="./image/icons.svg#person-black"></use>
+        </svg>
+    </div>
+      
+    <div>
+      <label for="tel">Телефон</label>
+      <input type="tel" name="tel" id="tel" required>
+      <svg class="" width="18" height="18">
+        <use href="./image/icons.svg#phone-black"></use>
+      </svg>
+    </div>
+
+    <div>
+      <label for="email">Пошта</label>
+      <input type="email" name="email" id="email">
+      <svg class="" width="18" height="18">
+        <use href="./image/icons.svg#email-black"></use>
+      </svg>
+    </div>
+
+    <div>
+      <label for="comment">Коментар</label>
+      <textarea name="comment" id="comment" rows="6">  
+    </div>
+
       <button type="submit">Відправити </button>
       </form>
     
+
     </div>
   </div>
   <script src="./js/modal.js"></script>
