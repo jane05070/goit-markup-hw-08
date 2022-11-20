@@ -415,19 +415,21 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer-subscription">
         <p class="join">Підпишіться на розсилку</p>
-        <form name="footer_form" autocomplete="on" novalidate></form>
+        <div class="subscription-form">
+        <form  class="footer-form" name="footer_form" autocomplete="on" novalidate></form>
         <label>
-          <input type="email" name="user_mail" id="user_email" placeholder="E-mail">
+          <input class="footer-input" type="email" name="user_mail" id="user_email" placeholder="E-mail">
         </label>
 
-        <button type="submit">Підписатися
-          <svg class="" width="24" height="24">
+        <button class="footer-btn" type="submit">Підписатися
+          <svg class="subscription-icons" width="24" height="24">
             <use href="./image/icons.svg#send"></use>
           </svg>
         </button>
         </form>
+        </div>
 
       </div>
     </div>
