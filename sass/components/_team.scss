@@ -11,34 +11,59 @@
     letter-spacing: 0.03em;
 
     color: var(--main-text-color);
+    margin-bottom: 30px;
 }
 
 .image-team {
-    width: 270px;
-    display: block;
-    max-width: 100%;
-    height: auto;
+    width: 450px;
+     
 
+@media sreen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media sreen and (min-width: 1200px) {
+        width: 270px;
+    }
+    
 }
 
 .team-list {
-    display: flex;
-    gap: 30px;
-    margin-top: 59px;
+    margin-bottom: 30px;
+    justify-content: center;
+   align-items: center;
+
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    
 }
 
 .card {
-    width: 270px;
     background-color: var(--background-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-
-}
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 0px 0px 4px 4px;
+    
+    
+            @media screen and (min-width: 768px) {
+                width: 354px;
+            }
+    
+            @media screen and (min-width: 1200px) {
+                width: 270px;
+            }
+        }
+    
+        
 
 .person {
     padding: 30px 0;
+        text-align: center;
 
-}
+    }
 
 .name {
     font-weight: 500;
@@ -64,7 +89,6 @@
 .social {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 10px;
 
 }

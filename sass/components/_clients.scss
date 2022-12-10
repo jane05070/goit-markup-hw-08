@@ -6,21 +6,36 @@
     letter-spacing: 0.03em;
 
     color: var(--main-text-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media sreen and (min-width: 1200px) {
+      margin-bottom: 50px;
+   }
 
 }
 
 .clients-list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+
+    @media sreen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
 
 }
+
+// @media screen and (max-width: 479px) {
+//     .client__items:not(:last-child) {
+//         margin-bottom: 30px;
+//     }
+// }
 
 .clients-bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     background-color: var(--background-color);
     color: #AFB1B8;
@@ -28,10 +43,20 @@
     border-radius: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+
+    @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
+
 &:hover,
     &:focus {
         color: var(--acent-color);
     }
+
+
 }
 
 .clients-icon {

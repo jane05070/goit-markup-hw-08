@@ -1,7 +1,6 @@
 .doing {
-    @extend @section; 
-
     padding-top: 0;
+
 }
 
 .doing__title {
@@ -14,7 +13,7 @@
     margin-bottom: 50px;
 }
 
-.image-list {
+.doing__list {
     display: flex;
     gap: 30px;
 
