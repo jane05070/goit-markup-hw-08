@@ -8,7 +8,7 @@
     color: var(--main-text-color);
     margin-bottom: 30px;
 
-    @media sreen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 50px;
    }
 
@@ -19,7 +19,7 @@
     gap: 30px;
     flex-wrap: wrap;
 
-    @media sreen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
             flex-wrap: nowrap;
         }
 

@@ -18,14 +18,14 @@
 </head>
 
 <body>
-   <!-- <header class="header">
+   <header class="header">
     <div class="header__container container">
 
 
       <a href="./index.html" class="logo link">Web<span class="logo__header">Studio</span></a>
 
-      <nav>
-        <ul class="nav list">
+      <nav class="nav">
+        <ul class="nav__list list">
           <li class="nav__item">
             <a href="./index.html" class="nav__link link current">Студія</a>
           </li>
@@ -53,9 +53,13 @@
             </svg> +38 096 111 11 11</a>
         </li>
       </ul>
-
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu__icon" width="40" height="40">
+          <use href="./image/icons.svg#menu-header"></use>
+        </svg>
+      </button>
     </div>
-  </header>  -->
+  </header>  
   <main>
     <section class="hero">
       <div class="container">
@@ -114,38 +118,48 @@
         </ul>
       </div>
     </section>
-     <!-- <section class="section doing">
+     <section class="section doing">
       <div class="container">
         <h2 class="doing__title">Чим ми займаємося</h2>
         <ul class="list doing__list">
           <li class="doing__item">
-            <img class="doing__image" src="./image/box-img-1.jpg" alt="друк на клавіатурі" width="370">
-
-            <p class="doing__overlay">Десктопні додатки</p>
+            <img class="doing__image" srcset="./image/works/works1.jpg 1x, ./image/works/works1@2x.jpg 2x"
+							src="./image/works/works1.jpg" alt="десктопні додатки" width="370" height="294" loading="lazy" />
+						<p class="works__descr">Десктопні додатки</p>
 
           </li>
           <li class="doing__item">
-            <img class="doing__image" src="./image/box-img-2.jpg" alt="телефон та екран монітору" width="370">
+            <img class="doing__image" srcset="./image/works/works2.jpg 1x, ./image/works/works2@2x.jpg 2x"
+							src="./image/works/works2.jpg" alt="мобільні додатки" width="370" height="294" loading="lazy" />
 
             <p class="doing__overlay">Мобільні додатки</p>
 
           </li>
           <li class="doing__item">
-            <img class="doing__image" src="./image/box-img-3.jpg" alt="планшет" width="370">
+            <img class="doing__image" srcset="./image/works/works3.jpg 1x, ./image/works/works3@2x.jpg 2x"
+							src="./image/works/works3.jpg" alt="дизайнерські рішення" width="370" height="294" loading="lazy" />
 
             <p class="doing__overlay">Дизайнерські рішення</p>
 
           </li>
         </ul>
       </div>
-    </section>  -->
+    </section> 
 
      <section class="team-section section">
       <div class="container">
         <h2 class="team">Наша команда</h2>
         <ul class="list team-list">
           <li class="card">
-            <img src="./image/persona-img-1.jpg" alt="чоловік" width="450" />
+          <img  srcset="
+          							./image/team/demjanenko480.jpg 450w, 
+          							./image/team/demjanenko480@2x.jpg 900w,
+          							./image/team/demjanenko768.jpg 354w,
+          							./image/team/demjanenko768@2x.jpg 708w,
+          							./image/team/demjanenko1200.jpg 270w,
+          							./image/team/demjanenko1200@2x.jpg 540w"
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+            src="./images/team/demjanenko480.jpg" alt="Ігор Дем'яненко" loading="lazy" />
             <div class="person">
               <h3 class="name">Ігор Дем'яненко</h3>
               <p lang="en" class="proffesion">Product Designer</p>
@@ -186,7 +200,15 @@
             </div>
           </li>
           <li class="card">
-            <img src="./image/persona-img-2.jpg" alt="жінка" width="450">
+            <img srcset="
+            							./image/team/repina480.jpg 450w, 
+            							./image/team/repina480@2x.jpg 900w,
+            							./image/team/repina768.jpg 354w,
+            							./image/team/repina768@2x.jpg 708w,
+            							./image/team/repina1200.jpg 270w,
+            							./image/team/repina1200@2x.jpg 540w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./image/team/repina480.jpg" alt="Ольга Рєпіна" loading="lazy" />
             <div class="person">
               <h3 class="name">Ольга Рєпіна</h3>
               <p lang="en" class="proffesion">Frontend Developer</p>
@@ -227,7 +249,19 @@
             </div>
           </li>
           <li class="card">
-            <img src="./image/persona-img-3.jpg" alt="чоловік" width="450">
+            <img srcset="
+            ./image/team/tarasov480.jpg 450w,
+            ./image/team/tarasov480@2x.jpg 900w,
+            ./image/team/tarasov768.jpg 354w,
+            ./image/team/tarasov768@2x.jpg 708w,
+            ./image/team/tarasov1200.jpg 270w,
+            ./image/team/tarasov1200@2x.jpg 540w
+            "
+            src="./image/team/tarasov480.jpg"
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+            min-width="270"
+            alt="Микола Тарасов Marketing"
+            />
             <div class="person">
               <h3 class="name">Микола Тарасов</h3>
               <p lang="en" class="proffesion">Marketing</p>
@@ -268,7 +302,16 @@
             </div>
           </li>
           <li class="card">
-            <img src="./image/persona-img-4.jpg" alt="чоловік" width="450">
+            <img srcset="
+                        ./image/team/yermakov480.jpg 450w,
+                        ./image/team/yermakov480@2x.jpg 900w,
+                        ./image/team/yermakov768.jpg 354w,
+                        ./image/team/yermakov768@2x.jpg 708w,
+                        ./image/team/yermakov1200.jpg 270w,
+                        ./image/team/yermakov1200@2x.jpg 540w
+                        " src="./image/team/yermakov480.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" min-width="270"
+              alt="Михайло Єрмаков UI Designer" />
             <div class="person">
               <h3 class="name">Михайло Єрмаков</h3>
               <p lang="en" class="proffesion">UI Designer</p>
@@ -438,7 +481,7 @@
   </footer>
 
   <!---Модальне вікно--->
-   <!-- <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal-btn" data-modal-close>
         <svg class="modal-icon" width="30" height="30">
@@ -495,20 +538,19 @@
     
 
     </div>
-  </div> -->
+  </div>
 
   <!-- Mобільне меню  -->
-  <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
-      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-        <path fill-rule="evenodd"
-          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-          clip-rule="evenodd"></path>
+      <svg class="modal-form-icon" width="32" height="32">
+        <use href="./image/icons.svg#header-close"></use>
       </svg>
     </button>
     <ul class="mobile-menu">
       <li class="mobile__roster">
-        <a href="./index.html" class="mobile__link link current__link">Студія</a>
+        <a href="./index.html" class="mobile__link link current">Студія</a>
       </li>
       <li class="mobile__roster">
         <a href="./portfolio.html" class="mobile__link link">Портфоліо</a>
@@ -542,13 +584,15 @@
       </li>
     </ul>
   </div>
+
+  <script src="./js/modal.js"></script>
+
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script> -->
-  <!-- <script src="./js/modal.js"></script>
-   -->
-
+  <script defer src="./js/mobile-menu.js"></script>
+  
+  
 </body>
 
 </html> 

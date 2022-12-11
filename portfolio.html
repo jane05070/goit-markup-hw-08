@@ -15,7 +15,7 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/main.min.css"/>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <!-- <link rel="stylesheet" href="./css/style.css"/> -->
   </head>
 
   <body>
@@ -25,15 +25,15 @@
     
         <a href="./index.html" class="logo link">Web<span class="logo__header">Studio</span></a>
     
-        <nav>
-          <ul class="nav list">
+        <nav class="nav">
+          <ul class="nav__list list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link link">Студія</a>
+              <a href="./index.html" class="nav__link link ">Студія</a>
             </li>
-            <li class="nav-item">
+            <li class="nav__item">
               <a href="./portfolio.html" class="nav__link link current">Портфоліо</a>
             </li>
-            <li class="nav-item">
+            <li class="nav__item">
               <a href="./index.html" class="nav__link link">Контакти</a>
             </li>
           </ul>
@@ -48,15 +48,17 @@
               info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+380961111111" class="contact__phone link">
-              <svg class="contact__icon" width="10" height="16">
+            <a href="tel:+380961111111" class="contact__phone link"><svg class="contact__icon" width="10" height="16">
                 <use href="./image/icons.svg#smartphone">
                 </use>
-              </svg> 
-              +38 096 111 11 11</a>
+              </svg> +38 096 111 11 11</a>
           </li>
         </ul>
-    
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./image/icons.svg#menu-header"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -87,9 +89,15 @@
             <a href="#" class="project-link link"> 
               <div class="project-thumb">
                 <img class="img-project"              
-              src="./image/project-img-1.jpg"
-              alt="інтерфейс на єкрані ноутбуку"
-              width="370">
+              srcset="
+									./image/projects/technokryak480.jpg 450w,
+									./image/projects/technokryak480@2x.jpg 900w,
+									./image/projects/technokryak768.jpg 354w,
+									./image/projects/technokryak768@2x.jpg 708w,
+									./image/projects/technokryak1200.jpg 370w,
+									./image/projects/technokryak1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./image/projects/technokryak480.jpg" alt="веб-сайт проєкту технокряк" loading="lazy" />
               <div class="project-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                 вичерпні відомості про компанію чи приватну особу.</p>
@@ -104,9 +112,16 @@
             <a href="#" class="project-link link">
               <div class="project-thumb">
             <img class="img-project"
-              src="./image/project-img-2.jpg"
-              alt="постер з баскетболістами"
-              width="370">
+              srcset="
+									./image/projects/poster480.jpg 450w,
+									./image/projects/poster480@2x.jpg 900w,
+									./image/projects/poster768.jpg 354w,
+									./image/projects/poster768@2x.jpg 708w,
+									./image/projects/poster1200.jpg 370w,
+									./image/projects/poster1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./image/projects/poster480.jpg"
+              alt="постер з баскетболістами" loading="lazy" />
               <div class="project-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                   дозволить відвідувачу отримати
@@ -124,9 +139,16 @@
             <a href="#" class="project-link link">
               <div class="project-thumb">
             <img class="img-project"
-              src="./image/project-img-3.jpg"
-              alt="лого рибного ресторану"
-              width="370">
+              srcset="
+									./image/projects/restaurant480.jpg 450w,
+									./image/projects/restaurant480@2x.jpg 900w,
+									./image/projects/restaurant768.jpg 354w,
+									./image/projects/restaurant768@2x.jpg 708w,
+									./image/projects/restaurant1200.jpg 370w,
+									./image/projects/restaurant1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./image/projects/restaurant480.jpg"
+              alt="лого рибного ресторану" loading="lazy"/>
               <div class="project-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                   дозволить відвідувачу отримати
@@ -144,7 +166,16 @@
             <a href="#" class="project-link link">
               <div class="project-thumb">
             <img class="img-project"
-            src="./image/project-img-4.jpg" alt="Навушники" width="370">
+            srcset="
+									./image/projects/prime480.jpg 450w,
+									./image/projects/prime480@2x.jpg 900w,
+									./image/projects/prime768.jpg 354w,
+									./image/projects/prime768@2x.jpg 708w,
+									./image/projects/prime1200.jpg 370w,
+									./image/projects/prime1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./image/projects/prime480.jpg"
+                   alt="Навушники" loading="lazy"/>
             <div class="project-overlay">
               <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати
@@ -160,7 +191,15 @@
             <a href="#" class="project-link link">
               <div class="project-thumb">
             <img class="img-project"
-            src="./image/project-img-5.jpg" alt="два бокси" width="370">
+            srcset="
+									./image/projects/boxes480.jpg 450w,
+									./image/projects/boxes480@2x.jpg 900w,
+									./image/projects/boxes768.jpg 354w,
+									./image/projects/boxes768@2x.jpg 708w,
+									./image/projects/boxes1200.jpg 370w,
+									./image/projects/boxes1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./image/projects/boxes480.jpg"  alt="два бокси" loading="lazy"/>
             <div class="project-overlay">
               <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати
@@ -176,9 +215,15 @@
             <a href="#" class="project-link link">
               <div class="project-thumb">
             <img class="img-project"
-              src="./image/project-img-6.jpg"
-              alt="екран монітору"
-              width="370">
+              srcset="
+									./image/projects/inspiration480.jpg 450w,
+									./image/projects/inspiration480@2x.jpg 900w,
+									./image/projects/inspiration768.jpg 354w,
+									./image/projects/inspiration768@2x.jpg 708w,
+									./image/projects/inspiration1200.jpg 370w,
+									./image/projects/inspiration1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./image/projects/inspiration480.jpg" alt="веб-сайт проєкту" loading="lazy" />
               <div class="project-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                   дозволить відвідувачу отримати
@@ -196,9 +241,17 @@
             <a href="#" class="project-link link">
               <div class="project-thumb">
             <img class="img-project"
-              src="./image/project-img-7.jpg"
+              srcset="
+									./image/projects/limited480.jpg 450w,
+									./image/projects/limited480@2x.jpg 900w,
+									./image/projects/limited768.jpg 354w,
+									./image/projects/limited768@2x.jpg 708w,
+									./image/projects/limited1200.jpg 370w,
+									./image/projects/limited1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./image/projects/limited480.jpg"
               alt="розкрита книга"
-              width="370">
+              loading="lazy" />
               <div class="project-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                   дозволить відвідувачу отримати
@@ -216,7 +269,15 @@
             <a href="#" class="project-link link">
               <div class="project-thumb">
             <img class="img-project"
-            src="./image/project-img-8.jpg" alt="лейба" width="370">
+            srcset="
+									./image/projects/lab480.jpg 450w,
+									./image/projects/lab480@2x.jpg 900w,
+									./image/projects/lab768.jpg 354w,
+									./image/projects/lab768@2x.jpg 708w,
+									./image/projects/lab1200.jpg 370w,
+									./image/projects/lab1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./image/projects/lab480.jpg" alt="лейба" loading="lazy" />
             <div class="project-overlay">
               <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                 дозволить відвідувачу отримати
@@ -232,9 +293,17 @@
             <a href="#" class="project-link link">
               <div class="project-thumb">
             <img class="img-project"
-              src="./image/project-img-9.jpg"
+              srcset="
+									./image/projects/growing480.jpg 450w,
+									./image/projects/growing480@2x.jpg 900w,
+									./image/projects/growing768.jpg 354w,
+									./image/projects/growing768@2x.jpg 708w,
+									./image/projects/growing1200.jpg 370w,
+									./image/projects/growing1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./image/projects/growing480.jpg"
               alt="друк на клавіатурі"
-              width="370">
+              loading="lazy" />
               <div class="project-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                   дозволить відвідувачу отримати
@@ -328,6 +397,54 @@
         </div>
         
         </footer>
-    </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-form-icon" width="32" height="32">
+          <use href="./image/icons.svg#header-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile__roster">
+          <a href="./index.html" class="mobile__link link current">Студія</a>
+        </li>
+        <li class="mobile__roster">
+          <a href="./portfolio.html" class="mobile__link link">Портфоліо</a>
+        </li>
+        <li class="mobile__roster">
+          <a href="" class="mobile__link link">Контакти</a>
+        </li>
+      </ul>
+    
+      <ul class="mobile__contact list">
+        <li class="contact__phone">
+          <a href="tel:+380961111111" class="mobile__phone">+38 096 111 11 11</a>
+        </li>
+        <li class="contact__mail">
+          <a href="mailto:info@devstudio.com" class="mobile__mail">info@devstudio.com</a>
+        </li>
+      </ul>
+    
+      <ul class="mobile__social list">
+        <li class="social__item">
+          <a href="" class="social__link link">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link link">Twitter</a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link link">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link link">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+    
+    
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

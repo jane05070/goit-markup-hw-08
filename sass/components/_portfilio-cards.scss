@@ -1,20 +1,29 @@
 .list-project {
+
+@media screen and (min-width: 768px) {
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
+}
 }
 
 .project-container {
+    max-width: 450px;
+@media screen and (min-width: 768px){
+    width: 354px;
+}
+@media screen and (min-width: 1200px){
     width: 370px;
 }
 
+}
 
 
 .project-thumb {
     position: relative;
     overflow: hidden;
+    
 }
 
 .project-overlay {

@@ -18,11 +18,11 @@
     width: 450px;
      
 
-@media sreen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
         width: 354px;
     }
 
-    @media sreen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 270px;
     }
     
@@ -46,6 +46,7 @@
     background-color: var(--background-color);
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             border-radius: 0px 0px 4px 4px;
+            margin-bottom: 30px;
     
     
             @media screen and (min-width: 768px) {

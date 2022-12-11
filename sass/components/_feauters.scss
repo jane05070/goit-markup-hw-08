@@ -8,7 +8,7 @@
 
 
 .feauters__item {
-    width: 450px;
+    width: 100%;
     
     @media screen and (min-width: 768px) {
             width: 354px;
@@ -42,11 +42,11 @@
     margin-bottom: 30px;
     border-radius: 4px;
 
-    @media sreen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
             width: 354px;
         }
     
-        @media sreen and (min-width: 1200px) {
+        @media screen and (min-width: 1200px) {
             width: 270px;
         }
 
