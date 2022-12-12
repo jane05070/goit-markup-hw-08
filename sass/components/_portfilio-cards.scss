@@ -8,6 +8,12 @@
 }
 }
 
+
+@media screen and (max-width: 767px) {
+    .project-container:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
 .project-container {
     max-width: 450px;
 @media screen and (min-width: 768px){

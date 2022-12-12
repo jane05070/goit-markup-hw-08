@@ -6,10 +6,13 @@
             }
         }
 
+@media screen and (max-width: 767px) {
+    .feauters__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
 
-.feauters__item {
-    width: 100%;
-    
+.feauters__item { 
     @media screen and (min-width: 768px) {
             width: 354px;
         }
