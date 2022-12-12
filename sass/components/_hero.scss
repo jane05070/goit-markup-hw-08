@@ -18,7 +18,7 @@
                 url('../image/hero/hero480@2x.jpg');
         }
     
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url('../image/hero/hero768.jpg');
     
@@ -30,7 +30,7 @@
             }
         }
     
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1200px) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url('../image/hero/hero1200.jpg');
     
